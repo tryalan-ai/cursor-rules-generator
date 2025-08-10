@@ -67,7 +67,21 @@ import {
   SiPlanetscale,
   SiNpm,
   SiPnpm,
-  SiYarn
+  SiYarn,
+  SiDvc,
+  SiHuggingface,
+  SiDatabricks,
+  SiDbt,
+  SiSnowflake,
+  SiApachekafka,
+  SiApacheairflow,
+  SiApachespark,
+  SiJupyter,
+  SiNumpy,
+  SiScikitlearn,
+  SiTensorflow,
+  SiPytorch,
+  SiPlotly
 } from "react-icons/si";
 
 // Custom icon component for Java
@@ -204,6 +218,34 @@ const technologies: Record<string, Technology[]> = {
     { id: "pydantic", label: "Pydantic", icon: SiPython, color: "text-blue-500" },
   ],
 
+  "Data Science": [
+    { id: "jupyter", label: "Jupyter", icon: SiPython, color: "text-orange-500" },
+    { id: "pandas", label: "Pandas", icon: SiPython, color: "text-gray-700" },
+    { id: "numpy", label: "NumPy", icon: SiPython, color: "text-blue-500" },
+    { id: "scipy", label: "SciPy", icon: SiPython, color: "text-indigo-600" },
+    { id: "scikit-learn", label: "scikit-learn", icon: SiPython, color: "text-orange-600" },
+    { id: "tensorflow", label: "TensorFlow", icon: SiPython, color: "text-orange-500" },
+    { id: "pytorch", label: "PyTorch", icon: SiPython, color: "text-red-600" },
+    { id: "plotly", label: "Plotly", icon: SiPython, color: "text-blue-600" },
+    { id: "huggingface", label: "Hugging Face", icon: SiPython, color: "text-yellow-500" },
+    { id: "dvc", label: "DVC", icon: SiDvc, color: "text-purple-600" },
+    { id: "mlflow", label: "MLflow", icon: SiPython, color: "text-blue-700" },
+  ],
+
+  "Data Engineering": [
+    { id: "apache-spark", label: "Apache Spark", icon: SiPython, color: "text-orange-500" },
+    { id: "apache-airflow", label: "Apache Airflow", icon: SiPython, color: "text-blue-600" },
+    { id: "apache-kafka", label: "Apache Kafka", icon: SiPython, color: "text-black dark:text-white" },
+    { id: "dbt", label: "dbt", icon: SiPython, color: "text-orange-600" },
+    { id: "databricks", label: "Databricks", icon: SiPython, color: "text-red-600" },
+    { id: "snowflake", label: "Snowflake", icon: SiPython, color: "text-blue-400" },
+    { id: "bigquery", label: "BigQuery", icon: SiGooglecloud, color: "text-blue-500" },
+    { id: "airbyte", label: "Airbyte", icon: SiPython, color: "text-sky-600" },
+    { id: "fivetran", label: "Fivetran", icon: SiPython, color: "text-blue-600" },
+    { id: "apache-flink", label: "Apache Flink", icon: SiPython, color: "text-orange-600" },
+    { id: "prefect", label: "Prefect", icon: SiPython, color: "text-blue-600" },
+  ],
+
   "Python Libraries": [
     { id: "uvicorn", label: "Uvicorn", icon: SiPython, color: "text-green-500" },
     { id: "gunicorn", label: "Gunicorn", icon: SiPython, color: "text-blue-600" },
@@ -276,6 +318,12 @@ const presets = {
   "Enterprise Monorepo": [
     "typescript", "react", "nextjs", "mui", "nestjs", "postgresql",
     "drizzle", "graphql", "turborepo", "jest", "playwright", "docker", "aws", "pnpm"
+  ],
+  "Python Data Science": [
+    "python", "jupyter", "pandas", "numpy", "scikit-learn", "tensorflow", "pytorch", "plotly", "pytest", "pytest-cov"
+  ],
+  "Modern Data Engineering": [
+    "python", "apache-spark", "apache-airflow", "apache-kafka", "dbt", "databricks", "snowflake", "bigquery", "docker", "aws"
   ]
 };
 
